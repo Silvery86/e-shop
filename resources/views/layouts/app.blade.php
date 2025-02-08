@@ -483,9 +483,9 @@
                             </svg>
                         </a>
                         <div>
-                            <form method="POST" action="{{ route('logout') }}">
+                            <form id="logout-form" method="POST" action="{{ route('logout') }}">
                                 @csrf
-                                <button type="submit">Logout</button>
+                                <a href="#" onclick="document.getElementById('logout-form').submit(); return false;">Logout</a>
                             </form>
                         </div>
                     </div>
