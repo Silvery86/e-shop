@@ -485,7 +485,7 @@
                         <div>
                             <form id="logout-form" method="POST" action="{{ route('logout') }}">
                                 @csrf
-                                <a href="#" onclick="document.getElementById('logout-form').submit(); return false;">Logout</a>
+                                <a href="#" onclick="event.preventDefault();document.getElementById('logout-form').submit(); return false;">Logout</a>
                             </form>
                         </div>
                     </div>

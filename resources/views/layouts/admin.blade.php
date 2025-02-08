@@ -161,9 +161,9 @@
                             </li>
 
                             <li class="menu-item">
-                                <form method="POST" action="{{ route('logout') }}" id="form-logout">
+                                <form method="POST" action="{{ route('logout') }}" id="form-logout-dashboard">
                                     @csrf
-                                    <a href="{{route('logout')}}" class="" onclick="preventDefault();document.getElementById('form-logout').submit();">
+                                    <a href="#" class="" onclick="event.preventDefault();document.getElementById('form-logout-dashboard').submit();">
                                         <div class="icon"><i class="icon-log-out"></i></div>
                                         <div class="text">Logout</div>
                                     </a>
